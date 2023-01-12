@@ -11,6 +11,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/telescope": "^4.11",
         "laravel/tinker": "^2.7",
+        "mkocansey/bladewind": "^2.0",
         "protonemedia/laravel-splade-breeze": "^2.1"
     },
     "require-dev": {
