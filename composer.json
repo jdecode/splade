@@ -14,6 +14,7 @@
         "protonemedia/laravel-splade-breeze": "^2.1"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.12",
         "fakerphp/faker": "^1.9.1",
         "laravel/dusk": "^7.4",
         "laravel/pint": "^1.0",
@@ -49,6 +50,11 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "ide-helper": [
+            "@php artisan ide-helper:generate -n",
+            "@php artisan ide-helper:models -n",
+            "@php artisan ide-helper:meta -n"
         ]
     },
     "extra": {
