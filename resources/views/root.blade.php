@@ -14,7 +14,7 @@
         @vite(['resources/js/app.js', 'resources/css/app.css'])
         @spladeHead
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         @splade
     </body>
 </html>
