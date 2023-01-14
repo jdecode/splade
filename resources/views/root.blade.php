@@ -19,6 +19,7 @@
             font-sans antialiased
             text-gray-500
             bg-gray-100 dark:bg-gray-900
+            container mx-auto
         ">
         @splade
     </body>
