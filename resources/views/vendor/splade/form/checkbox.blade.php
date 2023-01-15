@@ -1,5 +1,5 @@
 <div {{ $attributes->only(['v-if', 'v-show', 'class']) }}>
-    <label class="flex items-center">
+    <label class="flex items-center text-gray-500">
         <input {{ $attributes->except(['v-if', 'v-show', 'class'])->class(
             'rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 disabled:opacity-50'
         )->merge([
