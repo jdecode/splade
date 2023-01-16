@@ -4,8 +4,8 @@
 
 @layer base {
     :root {
-        --color-text-base: #d5d5d5;
-        --color-fill: #1b2025;
+        --color-text-base: #e16a35;
+        --color-fill: #111827;
         --color-accent: #ed8936;
     }
     .red {
@@ -21,7 +21,7 @@
         --color-fill: #0e5f0c;
     }
     .light {
-        --color-text-base: #000000;
-        --color-fill: #bac0c3;
+        --color-text-base: #64748b;
+        --color-fill: #F4F4F4;
     }
 }
