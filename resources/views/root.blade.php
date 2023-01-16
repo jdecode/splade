@@ -13,23 +13,28 @@
         <!-- Scripts -->
         @vite(['resources/js/app.js', 'resources/css/app.css'])
         @spladeHead
+        <script>
+            function setTheme(theme) {
+                let theme_element = document.getElementsByTagName('html')[0];
+                theme_element.removeAttribute('class');
+                theme_element.classList.add(theme);
+                localStorage.theme = theme;
+            }
+
+            if (localStorage.theme === 'undefined') {
+                setTheme('dark');
+            }
+            if (localStorage.theme !== 'undefined') {
+                setTheme(localStorage.theme);
+            }
+        </script>
     </head>
     <body
         class="
             font-sans antialiased
-            text-gray-500
-            bg-gray-100 dark:bg-gray-900
             container mx-auto
+            bg-skin-fill text-skin-base
         ">
-        <script>
-            function setTheme(theme) {
-                let theme_element = document.getElementById('theme');
-                theme_element.removeAttribute('class');
-                theme_element.classList.add(theme);
-            }
-        </script>
-        <div id="theme">
-            <div class="bg-skin-fill text-skin-base">@splade</div>
-        </div>
+        @splade
     </body>
 </html>
