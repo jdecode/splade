@@ -9,8 +9,8 @@
         --color-accent: #ed8936;
     }
     .red {
-        --color-text-base: #ff0000;
-        --color-fill: #ededed;
+        --color-text-base: #040303;
+        --color-fill: #c87474;
     }
     .blue {
         --color-text-base: #e6e6e6;
@@ -18,7 +18,7 @@
     }
     .green {
         --color-text-base: #191818;
-        --color-fill: #55f604;
+        --color-fill: #0e5f0c;
     }
     .light {
         --color-text-base: #000000;

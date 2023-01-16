@@ -21,6 +21,15 @@
             bg-gray-100 dark:bg-gray-900
             container mx-auto
         ">
-        @splade
+        <script>
+            function setTheme(theme) {
+                let theme_element = document.getElementById('theme');
+                theme_element.removeAttribute('class');
+                theme_element.classList.add(theme);
+            }
+        </script>
+        <div id="theme">
+            <div class="bg-skin-fill text-skin-base">@splade</div>
+        </div>
     </body>
 </html>

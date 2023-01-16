@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
     content: [
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
@@ -15,7 +16,6 @@ module.exports = {
                 skin: {
                     base: "var(--color-text-base)",
                 },
-                'red': '#FF0000',
             },
             backgroundColor: {
                 skin: {
