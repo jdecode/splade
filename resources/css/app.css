@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-text-base: #d5d5d5;
+        --color-fill: #1b2025;
+        --color-accent: #ed8936;
+    }
+    .red {
+        --color-text-base: #ff0000;
+        --color-fill: #ededed;
+    }
+    .blue {
+        --color-text-base: #e6e6e6;
+        --color-fill: #0391f3;
+    }
+    .green {
+        --color-text-base: #191818;
+        --color-fill: #55f604;
+    }
+    .light {
+        --color-text-base: #000000;
+        --color-fill: #bac0c3;
+    }
+}

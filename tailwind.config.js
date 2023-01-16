@@ -10,7 +10,19 @@ module.exports = {
     ],
 
     theme: {
-        extend: {},
+        extend: {
+            textColor: {
+                skin: {
+                    base: "var(--color-text-base)",
+                },
+                'red': '#FF0000',
+            },
+            backgroundColor: {
+                skin: {
+                    fill: "var(--color-fill)",
+                }
+            }
+        },
     },
 
     plugins: [
