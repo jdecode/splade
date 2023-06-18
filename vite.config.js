@@ -1,24 +1,23 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
-import vue from "@vitejs/plugin-vue";
+
+const host = "23.114.1.6";
 
 export default defineConfig({
-    plugins: [
+    "server": {
+        host,
+        "hmr": { host },
+        "watch": {
+            "ignored": [
+                "!**/vendor/**"
+            ]
+        },
+        "port": 2115
+    },
+    "plugins": [
         laravel({
-            input: "resources/js/app.js",
-            ssr: "resources/js/ssr.js",
+            input: ["resources/js/app.js", "resources/css/app.css"],
             refresh: true,
         }),
-        vue({
-            template: {
-                transformAssetUrls: {
-                    base: null,
-                    includeAbsolute: false,
-                },
-            },
-        }),
     ],
-    ssr: {
-        noExternal: ["vue", "@protonemedia/laravel-splade"]
-    },
 });
