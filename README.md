@@ -59,4 +59,5 @@ Javascript method `setTheme` for theme-switching is located in `resources/view/r
 
 #### Screen recording of the working theme-switcher:   
 
-[screen-recording-2023-06-19.webm](https://github.com/jdecode/splade/assets/37613346/cfac588d-a20a-44bc-b9d8-4aa42aba50fc)
+[screen-recording-2023-06-19.webm](https://github.com/jdecode/splade/assets/37613346/2934ad74-ad67-4777-8bc8-af173e3ebfd9)
+
